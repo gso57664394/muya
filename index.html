@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+    }
+
+    .phone {
+      max-width: 390px;
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 390px;
+      height: 52px;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 100;
+    }
+
+    .logo {
+      font-family: 'IM Fell English', serif;
+      font-style: italic;
+      font-size: 24px;
+      color: #ffffff;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── BG IMAGE ── */
+    .bg-image {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    /* ── FLOATING CTA ── */
+    .cta {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 390px;
+      display: flex;
+      justify-content: flex-end;
+      z-index: 100;
+    }
+
+    .cta-btn {
+      background: #1a1a1a;
+      color: #ffffff;
+      border: none;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-transform: lowercase;
+    }
+
+    .cta-btn .arrows {
+      font-size: 15px;
+      letter-spacing: -3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone">
+
+    <header>
+      <div class="logo">&#x1D4DC;</div>
+    </header>
+
+    <img class="bg-image" src="main.jpg" alt="" />
+
+    <div class="cta">
+      <button class="cta-btn">
+        <span>more info</span>
+        <span class="arrows">»</span>
+      </button>
+    </div>
+
+  </div>
+</body>
+</html>
