@@ -59,7 +59,8 @@
       width: 100%;
       height: auto;
       display: block;
-      margin-top: 0; /* 헤더 높이만큼 밀어주기 */
+      margin-top: 0;
+      pointer-events: none;
     }
 
     /* ── FLOATING CTA ── */
@@ -72,10 +73,11 @@
       width: auto;
       max-width: none;
       display: flex;
-      z-index: 100;
+      z-index: 999;
     }
 
     .cta-btn {
+      text-decoration: none;
       background: #2D2D32;
       color: #ffffff;  
       border: none;
@@ -102,20 +104,18 @@
   <div class="phone">
 
     <header>
-      <a href="index.html">
-        <img class="logo-img" src="logo.png" alt="logo" />
-      </a>
+      <img class="logo-img" src="logo.png" alt="logo" />
     </header>
 
     <img class="bg-image" src="main.jpg" alt="" />
-
-    <div class="cta">
-      <button class="cta-btn">
-        <span>more info</span>
-        <span class="arrows">»</span>
-      </button>
-    </div>
-
   </div>
+
+  <div class="cta">
+    <a href="info.html" class="cta-btn">
+      <span>more info</span>
+      <span class="arrows">»</span>
+    </a>
+  </div>
+
 </body>
 </html>
